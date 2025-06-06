@@ -11,11 +11,7 @@
       "key": "borderRadius"
     }
   ],
-  "dynamicPropertyPathList": [
-    {
-      "key": "onClick"
-    }
-  ],
+  "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [
     {
       "key": "onClick"
@@ -35,7 +31,7 @@
   "mobileRightColumn": 63,
   "mobileTopRow": 4,
   "needsErrorInfo": false,
-  "onClick": "{{ \nappsmith.store.cart_id \n? showAlert(\"Υπάρχει ήδη ενεργό καλάθι.\")\n: ApiCreateCart.run(() => {\n\tstoreValue(\"cart_id\", ApiCreateCart.data.cart_id);\n\tshowAlert(\"Το καλάθι δημιουργήθηκε!\");\n})\n}}\n",
+  "onClick": "{{ApiCreateCart.run().then(() => {\n  JSObject4.saveCartId();\n}).catch(() => {\n  showAlert('Υπάρχει ήδη ενεργό καλάθι. Ολοκληρώστε πρώτα την τρέχουσα αγορά.', 'error');\n});}}",
   "parentColumnSpace": 14.234375,
   "parentId": "0",
   "parentRowSpace": 10,
