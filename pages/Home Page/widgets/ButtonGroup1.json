@@ -1,0 +1,289 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 137,
+  "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+  "buttonVariant": "PRIMARY",
+  "childStylesheet": {
+    "button": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+    }
+  },
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "groupButtons.groupButtonhf93suc2kh.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton1.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton2.onClick"
+    },
+    {
+      "key": "groupButtons.groupButtong6yfgczwk3.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton7egjuzk8wu.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton8kf65icji1.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton9rk4wo6mcj.onClick"
+    },
+    {
+      "key": "groupButtons.groupButtonldkjwbcnm6.onClick"
+    },
+    {
+      "key": "groupButtons.groupButtonr05vl6xrlx.onClick"
+    },
+    {
+      "key": "groupButtons.groupButtonkjm9gigyon.onClick"
+    },
+    {
+      "key": "groupButtons.groupButtonpm182v16u5.onClick"
+    },
+    {
+      "key": "groupButtons.groupButtonn5a4d7t5by.onClick"
+    },
+    {
+      "key": "groupButtons.groupButtonikfqhfpscf.onClick"
+    }
+  ],
+  "groupButtons": {
+    "groupButton1": {
+      "buttonColor": "#b91c1c",
+      "buttonType": "SIMPLE",
+      "disabledWhenInvalid": false,
+      "id": "groupButton1",
+      "index": 0,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Είδη Άρτου",
+      "menuItems": {},
+      "onClick": "{{navigateTo('CategoryView', {\n \"category\": \"Είδη Άρτου\"\n}, 'SAME_WINDOW');}}",
+      "placement": "CENTER",
+      "widgetId": ""
+    },
+    "groupButton2": {
+      "buttonColor": "#b91c1c",
+      "buttonType": "SIMPLE",
+      "disabledWhenInvalid": false,
+      "id": "groupButton2",
+      "index": 1,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Φρούτα και Λαχανικά",
+      "menuItems": {},
+      "onClick": "{{navigateTo('CategoryView', {\n \"category\": \"Φρούτα και Λαχανικά\"\n}, 'SAME_WINDOW');}}",
+      "placement": "CENTER",
+      "widgetId": ""
+    },
+    "groupButton7egjuzk8wu": {
+      "buttonColor": "#b91c1c",
+      "buttonType": "SIMPLE",
+      "id": "groupButton7egjuzk8wu",
+      "index": 2,
+      "isDisabled": false,
+      "isSeparator": false,
+      "isVisible": true,
+      "itemType": "BUTTON",
+      "label": "Ψάρι και Θαλασσινά",
+      "menuItems": {},
+      "onClick": "{{navigateTo('CategoryView', {\n \"category\": \"Ψάρι και Θαλασσινά\"\n}, 'SAME_WINDOW');}}",
+      "placement": "CENTER",
+      "variant": "filled",
+      "widgetId": "4q1wcd7rxy"
+    },
+    "groupButton8kf65icji1": {
+      "buttonColor": "#b91c1c",
+      "buttonType": "SIMPLE",
+      "id": "groupButton8kf65icji1",
+      "index": 12,
+      "isDisabled": false,
+      "isSeparator": false,
+      "isVisible": true,
+      "itemType": "BUTTON",
+      "label": "Καλλυντικά και Είδη Υγιεινής",
+      "menuItems": {},
+      "onClick": "{{navigateTo('CategoryView', {\n \"category\": \"Καλλυντικά και Είδη Υγιεινής\",\n}, 'SAME_WINDOW');}}",
+      "placement": "CENTER",
+      "variant": "filled",
+      "widgetId": "opr1wpk1e9"
+    },
+    "groupButton9rk4wo6mcj": {
+      "buttonColor": "#b91c1c",
+      "buttonType": "SIMPLE",
+      "id": "groupButton9rk4wo6mcj",
+      "index": 11,
+      "isDisabled": false,
+      "isSeparator": false,
+      "isVisible": true,
+      "itemType": "BUTTON",
+      "label": "Είδη κουζίνας και Οικιακής Χρήσης",
+      "menuItems": {},
+      "onClick": "{{navigateTo('CategoryView', {\n \"category\": \"Είδη κουζίνας και Οικιακής Χρήσης\",\n}, 'SAME_WINDOW');}}",
+      "placement": "CENTER",
+      "variant": "filled",
+      "widgetId": "xfb7l6xo3d"
+    },
+    "groupButtong6yfgczwk3": {
+      "buttonColor": "#b91c1c",
+      "buttonType": "SIMPLE",
+      "id": "groupButtong6yfgczwk3",
+      "index": 10,
+      "isDisabled": false,
+      "isSeparator": false,
+      "isVisible": true,
+      "itemType": "BUTTON",
+      "label": "Βιβλία και Χαρτικά",
+      "menuItems": {},
+      "onClick": "{{navigateTo('CategoryView', {\n\t\"category\": \"Βιβλία και Χαρτικά\"\n}, 'SAME_WINDOW');}}",
+      "placement": "CENTER",
+      "variant": "filled",
+      "widgetId": "cwgbffppgc"
+    },
+    "groupButtonhf93suc2kh": {
+      "buttonColor": "#b91c1c",
+      "buttonType": "SIMPLE",
+      "id": "groupButtonhf93suc2kh",
+      "index": 5,
+      "isDisabled": false,
+      "isSeparator": false,
+      "isVisible": true,
+      "itemType": "BUTTON",
+      "label": "Γάλα και γαλακτοκομικά",
+      "menuItems": {},
+      "onClick": "{{navigateTo('CategoryView', {\n  \"category\": \"Γάλα και γαλακτοκομικά\"\n}, 'SAME_WINDOW');}}",
+      "placement": "CENTER",
+      "variant": "filled",
+      "widgetId": "ejwh1dyjdt"
+    },
+    "groupButtonikfqhfpscf": {
+      "buttonColor": "#b91c1c",
+      "buttonType": "SIMPLE",
+      "id": "groupButtonikfqhfpscf",
+      "index": 9,
+      "isDisabled": false,
+      "isSeparator": false,
+      "isVisible": true,
+      "itemType": "BUTTON",
+      "label": "Γλυκά και Είδη Ζαχαροπλαστείου ",
+      "menuItems": {},
+      "onClick": "{{navigateTo('CategoryView', {\n  \"category\": \"Γλυκά και Είδη Ζαχαροπλαστείου\"\n}, 'SAME_WINDOW');}}",
+      "placement": "CENTER",
+      "variant": "filled",
+      "widgetId": "v6gznf5izi"
+    },
+    "groupButtonkjm9gigyon": {
+      "buttonColor": "#b91c1c",
+      "buttonType": "SIMPLE",
+      "id": "groupButtonkjm9gigyon",
+      "index": 6,
+      "isDisabled": false,
+      "isSeparator": false,
+      "isVisible": true,
+      "itemType": "BUTTON",
+      "label": "Τυροκομικά",
+      "menuItems": {},
+      "onClick": "{{navigateTo('CategoryView', {\n \"category\": \"Τυροκομικά\",\n}, 'SAME_WINDOW');}}",
+      "placement": "CENTER",
+      "variant": "filled",
+      "widgetId": "evsyhfnotj"
+    },
+    "groupButtonldkjwbcnm6": {
+      "buttonColor": "#b91c1c",
+      "buttonType": "SIMPLE",
+      "id": "groupButtonldkjwbcnm6",
+      "index": 3,
+      "isDisabled": false,
+      "isSeparator": false,
+      "isVisible": true,
+      "itemType": "BUTTON",
+      "label": "Αυγά και Κρέας",
+      "menuItems": {},
+      "onClick": "{{navigateTo('CategoryView', {\n  \"category\": \"Αυγά και Κρέας\",\n}, 'SAME_WINDOW');}}",
+      "placement": "CENTER",
+      "variant": "filled",
+      "widgetId": "xptq0uenfs"
+    },
+    "groupButtonn5a4d7t5by": {
+      "buttonColor": "#b91c1c",
+      "buttonType": "SIMPLE",
+      "id": "groupButtonn5a4d7t5by",
+      "index": 8,
+      "isDisabled": false,
+      "isSeparator": false,
+      "isVisible": true,
+      "itemType": "BUTTON",
+      "label": "Κάβα",
+      "menuItems": {},
+      "onClick": "{{navigateTo('CategoryView', {\n \"category\": \"Κάβα\",\n}, 'SAME_WINDOW');}}",
+      "placement": "CENTER",
+      "variant": "filled",
+      "widgetId": "519xzwmkk8"
+    },
+    "groupButtonpm182v16u5": {
+      "buttonColor": "#b91c1c",
+      "buttonType": "SIMPLE",
+      "id": "groupButtonpm182v16u5",
+      "index": 7,
+      "isDisabled": false,
+      "isSeparator": false,
+      "isVisible": true,
+      "itemType": "BUTTON",
+      "label": "Αλλαντικά",
+      "menuItems": {},
+      "onClick": "{{navigateTo('CategoryView', {\n \"category\": \"Αλλαντικά\",\n}, 'SAME_WINDOW');}}",
+      "placement": "CENTER",
+      "variant": "filled",
+      "widgetId": "kw0s0306jx"
+    },
+    "groupButtonr05vl6xrlx": {
+      "buttonColor": "#b91c1c",
+      "buttonType": "SIMPLE",
+      "id": "groupButtonr05vl6xrlx",
+      "index": 4,
+      "isDisabled": false,
+      "isSeparator": false,
+      "isVisible": true,
+      "itemType": "BUTTON",
+      "label": "Νερά, Αναψυκτικά και Χυμοί",
+      "menuItems": {},
+      "onClick": "{{navigateTo('CategoryView', {\n \"category\": \"Νερά, Αναψυκτικά και Χυμοί\",\n}, 'SAME_WINDOW');}}",
+      "placement": "CENTER",
+      "variant": "filled",
+      "widgetId": "hw2r0niwu6"
+    }
+  },
+  "isCanvas": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "i8g8zfdi7u",
+  "leftColumn": 3,
+  "minWidth": 450,
+  "mobileBottomRow": 104,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 17,
+  "mobileTopRow": 100,
+  "needsErrorInfo": false,
+  "orientation": "vertical",
+  "originalBottomRow": 137,
+  "originalTopRow": 79,
+  "parentColumnSpace": 14.234375,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 60,
+  "topRow": 79,
+  "type": "BUTTON_GROUP_WIDGET",
+  "version": 1,
+  "widgetId": "rvqec3n0ne",
+  "widgetName": "ButtonGroup1"
+}

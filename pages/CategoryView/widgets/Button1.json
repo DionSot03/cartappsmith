@@ -1,0 +1,54 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 9,
+  "boxShadow": "none",
+  "buttonColor": "#b91c1c",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "iconAlign": "left",
+  "iconName": "add",
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "pwrpb6jp8f",
+  "leftColumn": 31,
+  "minWidth": 120,
+  "mobileBottomRow": 8,
+  "mobileLeftColumn": 47,
+  "mobileRightColumn": 63,
+  "mobileTopRow": 4,
+  "needsErrorInfo": false,
+  "onClick": "{{ \nappsmith.store.cart_id \n? showAlert(\"Υπάρχει ήδη ενεργό καλάθι.\")\n: ApiCreateCart.run(() => {\n\tstoreValue(\"cart_id\", ApiCreateCart.data.cart_id);\n\tshowAlert(\"Το καλάθι δημιουργήθηκε!\");\n})\n}}\n",
+  "parentColumnSpace": 14.234375,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 47,
+  "text": "Δημιουργία Καλαθιού",
+  "topRow": 4,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "fgk14a2spy",
+  "widgetName": "Button1"
+}
