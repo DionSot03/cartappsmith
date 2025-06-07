@@ -4,7 +4,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 58,
+  "bottomRow": 53,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "cachedTableData": {},
   "canFreezeColumn": true,
@@ -38,10 +38,13 @@
     "product_id",
     "quantity",
     "subtotal",
-    "customColumn1"
+    "customColumn1",
+    "cart_item_id"
   ],
-  "columnUpdatedAt": 1745936658290,
+  "columnUpdatedAt": 1749310046441,
   "columnWidthMap": {
+    "cart_item_id": 125,
+    "customColumn1": 210,
     "name": 208,
     "price": 207,
     "quantity": 199
@@ -83,9 +86,6 @@
       "key": "primaryColumns.subtotal.computedValue"
     },
     {
-      "key": "primaryColumns.customColumn1.buttonColor"
-    },
-    {
       "key": "primaryColumns.customColumn1.borderRadius"
     },
     {
@@ -93,11 +93,17 @@
     },
     {
       "key": "tableData"
+    },
+    {
+      "key": "primaryColumns.cart_item_id.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
     {
       "key": "tableData"
+    },
+    {
+      "key": "primaryColumns.customColumn1.onClick"
     }
   ],
   "dynamicTriggerPathList": [
@@ -116,7 +122,7 @@
   "isVisibleDownload": false,
   "isVisibleFilters": false,
   "isVisiblePagination": false,
-  "isVisibleSearch": true,
+  "isVisibleSearch": false,
   "key": "4bq9muo9oi",
   "label": "Data",
   "leftColumn": 1,
@@ -130,6 +136,40 @@
   "parentId": "0",
   "parentRowSpace": 10,
   "primaryColumns": {
+    "cart_item_id": {
+      "alias": "cart_item_id",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "number",
+      "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"cart_item_id\"])) : cart_item_id })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "cart_item_id",
+      "index": 0,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": false,
+      "label": "cart_item_id",
+      "notation": "standard",
+      "originalId": "cart_item_id",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
     "category": {
       "alias": "category",
       "allowCellWrapping": false,
@@ -162,12 +202,12 @@
       "width": 150
     },
     "customColumn1": {
-      "alias": "",
+      "alias": "Αφαίρεση από το καλάθι",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "borderRadius": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
       "boxShadow": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
-      "buttonColor": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
+      "buttonColor": "#b91c1c",
       "buttonStyle": "rgb(3, 179, 101)",
       "columnType": "iconButton",
       "computedValue": "",
@@ -188,10 +228,10 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "",
+      "label": "Αφαίρεση από το καλάθι",
       "labelColor": "#FFFFFF",
       "notation": "standard",
-      "onClick": "{{ApiGetCart.run()}}",
+      "onClick": "ApiRemovefromCart.run(() => {\n  ApiGetCart.run(); // Ανανεώνει άμεσα τα προϊόντα του καλαθιού\n  showAlert(\"Το προϊόν αφαιρέθηκε από το καλάθι\", \"success\");\n});\n",
       "originalId": "customColumn1",
       "sticky": "",
       "textSize": "0.875rem",
@@ -344,7 +384,7 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": true,
+      "isVisible": false,
       "label": "Υποσύνολο",
       "notation": "standard",
       "originalId": "subtotal",

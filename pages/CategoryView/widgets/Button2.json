@@ -3,12 +3,15 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 9,
   "boxShadow": "none",
-  "buttonColor": "#b91c1c",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
   "buttonVariant": "PRIMARY",
   "disabledWhenInvalid": false,
   "dynamicBindingPathList": [
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "buttonColor"
     }
   ],
   "dynamicPropertyPathList": [
@@ -35,7 +38,7 @@
   "mobileRightColumn": 46,
   "mobileTopRow": 4,
   "needsErrorInfo": false,
-  "onClick": "{{ \n  appsmith.store.cart_id \n    ? navigateTo('CartView') \n    : showAlert(\"Δεν υπάρχει ενεργό καλάθι.\", \"warning\")\n}}\n",
+  "onClick": "{{ \n  appsmith.store.cart_id \nstoreValue(\"last_category\", appsmith.URL.queryParams.category)\n    ? navigateTo('CartView') \n    : showAlert(\"Δεν υπάρχει ενεργό καλάθι.\", \"warning\")\n}}\n",
   "parentColumnSpace": 14.234375,
   "parentId": "0",
   "parentRowSpace": 10,

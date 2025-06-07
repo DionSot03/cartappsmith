@@ -1,12 +1,12 @@
 {
-  "gitSyncId": "680a79af76c3db56aa189541_b1b98a9c-850a-43e2-89ef-88f5e68b5de4",
+  "gitSyncId": "680a79af76c3db56aa189541_a701eda9-e944-4b92-88a1-6a7abbbbf593",
   "unpublishedPage": {
-    "customSlug": "category",
+    "isHidden": false,
     "layouts": [
       {
         "dsl": {
           "backgroundColor": "none",
-          "bottomRow": 770,
+          "bottomRow": 600,
           "canExtend": true,
           "containerStyle": "none",
           "detachFromLayout": true,
@@ -26,7 +26,7 @@
         }
       }
     ],
-    "name": "CategoryView",
-    "slug": "categoryview"
+    "name": "Success Page",
+    "slug": "success-page"
   }
 }

@@ -1,49 +1,56 @@
 {
   "animateLoading": true,
+  "backgroundColor": "{{appsmith.theme.colors.backgroundColor}}",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 77,
+  "bottomRow": 25,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "text"
+    },
+    {
+      "key": "backgroundColor"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
   "dynamicTriggerPathList": [],
   "fontFamily": "Ubuntu",
-  "fontSize": "1.875rem",
+  "fontSize": "3rem",
   "fontStyle": "BOLD",
   "isLoading": false,
   "isVisible": true,
-  "key": "vr8cbjsjcr",
-  "leftColumn": 2,
+  "key": "laa92nbiwb",
+  "leftColumn": 6,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 91,
-  "mobileLeftColumn": 4,
-  "mobileRightColumn": 20,
-  "mobileTopRow": 87,
+  "mobileBottomRow": 26,
+  "mobileLeftColumn": 22,
+  "mobileRightColumn": 38,
+  "mobileTopRow": 22,
   "needsErrorInfo": false,
-  "originalBottomRow": 77,
-  "originalTopRow": 72,
+  "originalBottomRow": 25,
+  "originalTopRow": 18,
   "overflow": "NONE",
   "parentColumnSpace": 14.234375,
   "parentId": "0",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 28,
+  "rightColumn": 58,
   "shouldTruncate": false,
-  "text": "Επιλέξτε κατηγορία",
-  "textAlign": "LEFT",
-  "textColor": "#1e3a8a",
-  "topRow": 72,
+  "text": "Επιβεβαίωση Συνόλου: {{ApiGetCart.data.total}} €",
+  "textAlign": "CENTER",
+  "textColor": "#b91c1c",
+  "topRow": 18,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "bscxz1l0ju",
-  "widgetName": "Text2"
+  "widgetId": "lg7t1tf6qc",
+  "widgetName": "Text1"
 }

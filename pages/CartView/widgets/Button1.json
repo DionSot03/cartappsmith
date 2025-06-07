@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 76,
+  "bottomRow": 65,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
   "buttonVariant": "PRIMARY",
@@ -14,17 +14,20 @@
       "key": "borderRadius"
     }
   ],
+  "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [
     {
       "key": "onClick"
     }
   ],
+  "iconAlign": "left",
+  "iconName": "tick-circle",
   "isDefaultClickDisabled": true,
   "isDisabled": false,
   "isLoading": false,
   "isVisible": true,
   "key": "5b6u0cco3i",
-  "leftColumn": 43,
+  "leftColumn": 38,
   "minWidth": 120,
   "mobileBottomRow": 49,
   "mobileLeftColumn": 22,
@@ -32,8 +35,8 @@
   "mobileTopRow": 45,
   "needsErrorInfo": false,
   "onClick": "{{navigateTo('Checkout', {}, 'SAME_WINDOW');}}",
-  "originalBottomRow": 76,
-  "originalTopRow": 71,
+  "originalBottomRow": 65,
+  "originalTopRow": 60,
   "parentColumnSpace": 14.234375,
   "parentId": "0",
   "parentRowSpace": 10,
@@ -42,9 +45,9 @@
   "renderMode": "CANVAS",
   "resetFormOnClick": false,
   "responsiveBehavior": "hug",
-  "rightColumn": 60,
+  "rightColumn": 55,
   "text": "Ταμείο",
-  "topRow": 71,
+  "topRow": 60,
   "type": "BUTTON_WIDGET",
   "version": 1,
   "widgetId": "seeztnube5",

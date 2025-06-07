@@ -4,10 +4,11 @@
   "borderColor": "#f4f4f5",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "4",
-  "bottomRow": 101,
+  "bottomRow": 77,
   "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
   "cachedTableData": {},
   "canFreezeColumn": true,
+  "cellBackground": "{{appsmith.theme.colors.backgroundColor}}",
   "childStylesheet": {
     "button": {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
@@ -88,6 +89,33 @@
     },
     {
       "key": "tableData"
+    },
+    {
+      "key": "cellBackground"
+    },
+    {
+      "key": "primaryColumns.category.cellBackground"
+    },
+    {
+      "key": "primaryColumns.description.cellBackground"
+    },
+    {
+      "key": "primaryColumns.id.cellBackground"
+    },
+    {
+      "key": "primaryColumns.image_url.cellBackground"
+    },
+    {
+      "key": "primaryColumns.name.cellBackground"
+    },
+    {
+      "key": "primaryColumns.price.cellBackground"
+    },
+    {
+      "key": "primaryColumns.customColumn1.cellBackground"
+    },
+    {
+      "key": "primaryColumns.customColumn1.buttonColor"
     }
   ],
   "dynamicPropertyPathList": [
@@ -96,9 +124,6 @@
     },
     {
       "key": "primaryColumns.customColumn1.isCellVisible"
-    },
-    {
-      "key": "primaryColumns.customColumn1.onClick"
     }
   ],
   "dynamicTriggerPathList": [
@@ -136,6 +161,7 @@
       "alias": "category",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{appsmith.theme.colors.backgroundColor}}",
       "columnType": "text",
       "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"category\"])) :  currentRow[\"category\"] })()}}",
       "currencyCode": "USD",
@@ -164,14 +190,15 @@
       "width": 150
     },
     "customColumn1": {
-      "alias": "",
+      "alias": "Προσθήκη στο καλάθι",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "borderRadius": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
       "boxShadow": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
-      "buttonColor": "#b91c1c",
+      "buttonColor": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
       "buttonLabel": "Προσθήκη στο Καλάθι",
       "buttonStyle": "rgb(3, 179, 101)",
+      "cellBackground": "{{appsmith.theme.colors.backgroundColor}}",
       "columnType": "button",
       "computedValue": "",
       "currencyCode": "USD",
@@ -190,10 +217,10 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "",
+      "label": "Προσθήκη στο καλάθι",
       "labelColor": "#FFFFFF",
       "notation": "standard",
-      "onClick": "{{ \nappsmith.store.cart_id \n? ApiAddtoCart.run({\n\tproduct_id: currentRow.id,\n\tquantity: 1\n}, \n\t\t\t\t\t\t\t\t\t () => showAlert(\"Προστέθηκε στο καλάθι!\", \"success\")\n\t\t\t\t\t\t\t\t\t)\n: showAlert(\"Δεν υπάρχει ενεργό καλάθι. Δημιουργήστε πρώτα καλάθι.\", \"warning\")\n}}\n",
+      "onClick": "{{ApiAddtoCart.run().then(() => {\n  showAlert('Το προϊον προστέθηκε στο καλάθι.', 'success');\n}).catch(() => {\n  showAlert('Δεν έχετε ενεργό καλάθι. Παρακαλώ δημιουργήστε ένα.', 'error');\n});}}",
       "originalId": "customColumn1",
       "sticky": "",
       "textSize": "0.875rem",
@@ -206,6 +233,7 @@
       "alias": "description",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{appsmith.theme.colors.backgroundColor}}",
       "columnType": "text",
       "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"description\"])) :  currentRow[\"description\"] })()}}",
       "currencyCode": "USD",
@@ -238,6 +266,7 @@
       "alias": "id",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{appsmith.theme.colors.backgroundColor}}",
       "columnType": "number",
       "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"id\"])) :  currentRow[\"id\"] })()}}",
       "currencyCode": "USD",
@@ -269,6 +298,7 @@
       "alias": "image_url",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{appsmith.theme.colors.backgroundColor}}",
       "columnType": "text",
       "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"image_url\"])) :  currentRow[\"image_url\"] })()}}",
       "currencyCode": "USD",
@@ -286,7 +316,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "image_url",
+      "label": "Εικόνα",
       "notation": "standard",
       "originalId": "image_url",
       "sticky": "",
@@ -300,6 +330,7 @@
       "alias": "name",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{appsmith.theme.colors.backgroundColor}}",
       "columnType": "text",
       "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"name\"])) :  currentRow[\"name\"] })()}}",
       "currencyCode": "USD",
@@ -331,6 +362,7 @@
       "alias": "price",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{appsmith.theme.colors.backgroundColor}}",
       "columnType": "number",
       "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"price\"])) :  currentRow[\"price\"] })()}}",
       "currencyCode": "USD",
@@ -366,7 +398,7 @@
   "showInlineEditingOptionDropdown": true,
   "tableData": "{{\n  Api1.data.filter(p => p.category === appsmith.URL.queryParams.category)\n}}\n\n\n\n\n",
   "textSize": "0.875rem",
-  "topRow": 22,
+  "topRow": 11,
   "totalRecordsCount": 0,
   "type": "TABLE_WIDGET_V2",
   "variant": "DEFAULT",

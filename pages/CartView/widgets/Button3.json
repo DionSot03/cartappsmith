@@ -14,24 +14,31 @@
       "key": "borderRadius"
     }
   ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
   "dynamicTriggerPathList": [
     {
       "key": "onClick"
     }
   ],
+  "iconAlign": "left",
+  "iconName": "fast-backward",
   "isDefaultClickDisabled": true,
   "isDisabled": false,
   "isLoading": false,
   "isVisible": true,
   "key": "5b6u0cco3i",
-  "leftColumn": 47,
+  "leftColumn": 43,
   "minWidth": 120,
   "mobileBottomRow": 63,
   "mobileLeftColumn": 6,
   "mobileRightColumn": 22,
   "mobileTopRow": 59,
   "needsErrorInfo": false,
-  "onClick": "{{navigateTo('CategoryView', {}, 'SAME_WINDOW');}}",
+  "onClick": "navigateTo(\"CategoryView\", { category: appsmith.store.last_category })\n",
   "parentColumnSpace": 14.234375,
   "parentId": "0",
   "parentRowSpace": 10,
@@ -41,7 +48,7 @@
   "resetFormOnClick": false,
   "responsiveBehavior": "hug",
   "rightColumn": 63,
-  "text": "Πίσω στις Αγορές",
+  "text": "Επιστροφή στην Προηγούμενη Σελίδα",
   "topRow": 4,
   "type": "BUTTON_WIDGET",
   "version": 1,

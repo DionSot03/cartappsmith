@@ -3,15 +3,17 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 8,
   "boxShadow": "none",
-  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonColor": "#b91c1c",
   "buttonVariant": "PRIMARY",
   "disabledWhenInvalid": false,
   "dynamicBindingPathList": [
     {
-      "key": "buttonColor"
-    },
-    {
       "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
     }
   ],
   "dynamicTriggerPathList": [
@@ -20,20 +22,20 @@
     }
   ],
   "iconAlign": "left",
-  "iconName": "home",
+  "iconName": "delete",
   "isDefaultClickDisabled": true,
   "isDisabled": false,
   "isLoading": false,
   "isVisible": true,
-  "key": "5b6u0cco3i",
-  "leftColumn": 26,
+  "key": "nfw447m1jp",
+  "leftColumn": 1,
   "minWidth": 120,
-  "mobileBottomRow": 56,
-  "mobileLeftColumn": 9,
-  "mobileRightColumn": 25,
-  "mobileTopRow": 52,
+  "mobileBottomRow": 8,
+  "mobileLeftColumn": 1,
+  "mobileRightColumn": 17,
+  "mobileTopRow": 4,
   "needsErrorInfo": false,
-  "onClick": "{{navigateTo('Home Page', {}, 'SAME_WINDOW');}}",
+  "onClick": "{{ \n  appsmith.store.cart_id \n    ? ApiDeleteCart.run(() => {\n        removeValue(\"cart_id\");\n        ApiGetCart.run();\n        showAlert(\"Το καλάθι διαγράφηκε\", \"success\");\n      })\n    : showAlert(\"Δεν υπάρχει καλάθι για διαγραφή\", \"error\")\n}}\n",
   "parentColumnSpace": 14.234375,
   "parentId": "0",
   "parentRowSpace": 10,
@@ -42,11 +44,11 @@
   "renderMode": "CANVAS",
   "resetFormOnClick": false,
   "responsiveBehavior": "hug",
-  "rightColumn": 42,
-  "text": "Πίσω στην Αρχική",
+  "rightColumn": 17,
+  "text": "Διαγραφή Καλαθιού",
   "topRow": 4,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "bljigp7h49",
-  "widgetName": "Button2"
+  "widgetId": "k35k8yamni",
+  "widgetName": "Button4"
 }

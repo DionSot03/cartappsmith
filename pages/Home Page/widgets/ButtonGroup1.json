@@ -66,7 +66,7 @@
       "isVisible": true,
       "label": "Είδη Άρτου",
       "menuItems": {},
-      "onClick": "{{navigateTo('CategoryView', {\n \"category\": \"Είδη Άρτου\"\n}, 'SAME_WINDOW');}}",
+      "onClick": "{{navigateTo('CategoryView', {\n  \"category\": \"Είδη Άρτου\"\n}, 'SAME_WINDOW').then(() => {\n  storeValue(\"\", \"\");\n});}}",
       "placement": "CENTER",
       "widgetId": ""
     },

@@ -20,6 +20,10 @@
     {
       "id": "Checkout",
       "isDefault": false
+    },
+    {
+      "id": "Success Page",
+      "isDefault": false
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "680a79af76c3db56aa189541_b0254003-5882-41d4-bd6c-f6f08c75439f",
-  "id": "CategoryView_ApiAddtoCart",
+  "gitSyncId": "680a79af76c3db56aa189541_ba779b3b-47f8-4bf9-9043-b3617bafdf4a",
+  "id": "CartView_ApiRemovefromCart",
   "pluginId": "restapi-plugin",
   "pluginType": "API",
   "unpublishedAction": {
@@ -11,17 +11,17 @@
           "value": "application/json"
         }
       ],
-      "body": "{\n\t\"product_id\": {{ Table1.triggeredRow.id }},\n\t\"quantity\": {{ 1 }}\n}\n\n",
+      "body": "",
       "bodyFormData": [],
       "encodeParamsToggle": true,
       "formData": {
         "apiContentType": "application/json"
       },
       "headers": [],
-      "httpMethod": "POST",
+      "httpMethod": "DELETE",
       "httpVersion": "HTTP11",
       "paginationType": "NONE",
-      "path": "/carts/{{appsmith.store.cart_id}}/items",
+      "path": "/carts/{{appsmith.store.cart_id}}/items/{{Table1.triggeredRow.cart_item_id}}",
       "pluginSpecifiedTemplates": [
         {
           "value": true
@@ -40,13 +40,10 @@
     "dynamicBindingPathList": [
       {
         "key": "path"
-      },
-      {
-        "key": "body"
       }
     ],
-    "name": "ApiAddtoCart",
-    "pageId": "CategoryView",
+    "name": "ApiRemovefromCart",
+    "pageId": "CartView",
     "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }

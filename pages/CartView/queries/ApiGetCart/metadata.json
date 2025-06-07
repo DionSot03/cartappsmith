@@ -16,7 +16,7 @@
       "httpMethod": "GET",
       "httpVersion": "HTTP11",
       "paginationType": "NONE",
-      "path": "/carts/15\n",
+      "path": "/carts/{{appsmith.store.cart_id}}\n",
       "pluginSpecifiedTemplates": [
         {
           "value": true
@@ -32,7 +32,11 @@
       "name": "Untitled datasource 8",
       "pluginId": "restapi-plugin"
     },
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "path"
+      }
+    ],
     "name": "ApiGetCart",
     "pageId": "CartView",
     "runBehaviour": "ON_PAGE_LOAD",

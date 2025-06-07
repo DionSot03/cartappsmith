@@ -1,5 +1,5 @@
 {
-  "product_id": 3,
-  "quantity": 1
+	"product_id": {{ Table1.triggeredRow.id }},
+	"quantity": {{ 1 }}
 }
 
