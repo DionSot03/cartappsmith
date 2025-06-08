@@ -1,49 +1,58 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 54,
+  "bottomRow": 67,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
     },
     {
+      "key": "fontFamily"
+    },
+    {
       "key": "borderRadius"
+    },
+    {
+      "key": "text"
+    },
+    {
+      "key": "textColor"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
   "dynamicTriggerPathList": [],
-  "fontFamily": "Ubuntu",
-  "fontSize": "3.75rem",
+  "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+  "fontSize": "3rem",
   "fontStyle": "BOLD",
   "isLoading": false,
   "isVisible": true,
-  "key": "laa92nbiwb",
+  "key": "s7h6po7haf",
   "leftColumn": 9,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 23,
-  "mobileLeftColumn": 20,
-  "mobileRightColumn": 36,
-  "mobileTopRow": 19,
+  "mobileBottomRow": 61,
+  "mobileLeftColumn": 22,
+  "mobileRightColumn": 38,
+  "mobileTopRow": 57,
   "needsErrorInfo": false,
-  "originalBottomRow": 54,
-  "originalTopRow": 2,
+  "originalBottomRow": 67,
+  "originalTopRow": 54,
   "overflow": "NONE",
   "parentColumnSpace": 14.234375,
   "parentId": "0",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 56,
+  "rightColumn": 58,
   "shouldTruncate": false,
-  "text": "✅Το καλάθι σας ολοκληρώθηκε.\n\nΕυχαριστούμε για την αγορά σας!\n\n\n\n\n",
+  "text": "Η αγορά ολοκληρώθηκε στις: {{ appsmith.store.checkout_time }}",
   "textAlign": "CENTER",
-  "textColor": "#b91c1c",
-  "topRow": 2,
+  "textColor": "{{appsmith.theme.colors.primaryColor}}",
+  "topRow": 54,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "6wqfhh9yxt",
-  "widgetName": "Text1"
+  "widgetId": "m75rrg6vwt",
+  "widgetName": "Text2"
 }
