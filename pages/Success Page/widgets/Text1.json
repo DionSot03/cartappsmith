@@ -1,13 +1,16 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 45,
+  "bottomRow": 74,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "text"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
@@ -37,7 +40,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 60,
   "shouldTruncate": false,
-  "text": "✅Το καλάθι σας ολοκληρώθηκε.\n\nΕυχαριστούμε για την αγορά σας!\n\n",
+  "text": "✅Το καλάθι σας ολοκληρώθηκε.\n\nΕυχαριστούμε για την αγορά σας!\n\nΗ αγορά ολοκληρώθηκε στις: {{ appsmith.store.checkout_time }}\n\n\n",
   "textAlign": "CENTER",
   "textColor": "#b91c1c",
   "topRow": 1,

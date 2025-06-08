@@ -1,8 +1,8 @@
 {
   "gitSyncId": "680a79af76c3db56aa189541_e8695356-5465-4608-a325-6576ca8dc75c",
-  "id": "CategoryView_JSObject4",
+  "id": "CategoryView_JSObjectStoreCartID",
   "unpublishedCollection": {
-    "name": "JSObject4",
+    "name": "JSObjectStoreCartID",
     "pageId": "CategoryView",
     "pluginId": "js-plugin",
     "pluginType": "JS",

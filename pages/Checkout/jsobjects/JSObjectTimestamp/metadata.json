@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "680a79af76c3db56aa189541_0dedd1e0-7f92-4179-87e9-59e8c9098043",
+  "id": "Checkout_JSObjectTimestamp",
+  "unpublishedCollection": {
+    "name": "JSObjectTimestamp",
+    "pageId": "Checkout",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}
