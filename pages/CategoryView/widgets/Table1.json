@@ -4,7 +4,7 @@
   "borderColor": "#f4f4f5",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "4",
-  "bottomRow": 78,
+  "bottomRow": 129,
   "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
   "cachedTableData": {},
   "canFreezeColumn": true,
@@ -88,9 +88,6 @@
       "key": "primaryColumns.customColumn1.boxShadow"
     },
     {
-      "key": "tableData"
-    },
-    {
       "key": "cellBackground"
     },
     {
@@ -116,14 +113,20 @@
     },
     {
       "key": "primaryColumns.customColumn1.buttonColor"
+    },
+    {
+      "key": "tableData"
     }
   ],
   "dynamicPropertyPathList": [
     {
+      "key": "primaryColumns.customColumn1.isCellVisible"
+    },
+    {
       "key": "tableData"
     },
     {
-      "key": "primaryColumns.customColumn1.isCellVisible"
+      "key": "isVisibleSearch"
     }
   ],
   "dynamicTriggerPathList": [
@@ -131,7 +134,7 @@
       "key": "primaryColumns.customColumn1.onClick"
     }
   ],
-  "enableClientSideSearch": false,
+  "enableClientSideSearch": true,
   "endOfData": false,
   "flexVerticalAlignment": "start",
   "horizontalAlignment": "CENTER",
@@ -142,7 +145,7 @@
   "isVisibleDownload": false,
   "isVisibleFilters": false,
   "isVisiblePagination": false,
-  "isVisibleSearch": false,
+  "isVisibleSearch": "true",
   "key": "c32c6yplcl",
   "label": "Data",
   "leftColumn": 0,
@@ -396,7 +399,7 @@
   "rightColumn": 64,
   "searchKey": "",
   "showInlineEditingOptionDropdown": true,
-  "tableData": "{{\n  ApiShowProducts.data.filter(p => p.category === appsmith.URL.queryParams.category)\n}}\n\n\n\n\n",
+  "tableData": "{{\nApiShowProducts.data.filter(p => p.category === appsmith.URL.queryParams.category)\n}}\n\n",
   "textSize": "0.875rem",
   "topRow": 12,
   "totalRecordsCount": 0,

@@ -53,9 +53,34 @@
     },
     {
       "key": "groupButtons.groupButtonikfqhfpscf.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton79lhpwvlpa.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton0rhrneur43.onClick"
+    },
+    {
+      "key": "groupButtons.groupButtonvec6yrhb3g.onClick"
     }
   ],
   "groupButtons": {
+    "groupButton0rhrneur43": {
+      "buttonColor": "#b91c1c",
+      "buttonType": "SIMPLE",
+      "id": "groupButton0rhrneur43",
+      "index": 9,
+      "isDisabled": false,
+      "isSeparator": false,
+      "isVisible": true,
+      "itemType": "BUTTON",
+      "label": "Καφές",
+      "menuItems": {},
+      "onClick": "{{navigateTo('CategoryView', {\n  \"category\": \"Καφές\"\n}, 'SAME_WINDOW');}}",
+      "placement": "CENTER",
+      "variant": "filled",
+      "widgetId": "nglb5u83z1"
+    },
     "groupButton1": {
       "buttonColor": "#b91c1c",
       "buttonType": "SIMPLE",
@@ -84,6 +109,22 @@
       "placement": "CENTER",
       "widgetId": ""
     },
+    "groupButton79lhpwvlpa": {
+      "buttonColor": "#b91c1c",
+      "buttonType": "SIMPLE",
+      "id": "groupButton79lhpwvlpa",
+      "index": 7,
+      "isDisabled": false,
+      "isSeparator": false,
+      "isVisible": true,
+      "itemType": "BUTTON",
+      "label": "Λάδι",
+      "menuItems": {},
+      "onClick": "{{navigateTo('CategoryView', {\n  \"category\": \"Λάδι\"\n}, 'SAME_WINDOW');}}",
+      "placement": "CENTER",
+      "variant": "filled",
+      "widgetId": "dfinqlg682"
+    },
     "groupButton7egjuzk8wu": {
       "buttonColor": "#b91c1c",
       "buttonType": "SIMPLE",
@@ -104,7 +145,7 @@
       "buttonColor": "#b91c1c",
       "buttonType": "SIMPLE",
       "id": "groupButton8kf65icji1",
-      "index": 12,
+      "index": 15,
       "isDisabled": false,
       "isSeparator": false,
       "isVisible": true,
@@ -120,7 +161,7 @@
       "buttonColor": "#b91c1c",
       "buttonType": "SIMPLE",
       "id": "groupButton9rk4wo6mcj",
-      "index": 11,
+      "index": 14,
       "isDisabled": false,
       "isSeparator": false,
       "isVisible": true,
@@ -136,7 +177,7 @@
       "buttonColor": "#b91c1c",
       "buttonType": "SIMPLE",
       "id": "groupButtong6yfgczwk3",
-      "index": 10,
+      "index": 13,
       "isDisabled": false,
       "isSeparator": false,
       "isVisible": true,
@@ -168,7 +209,7 @@
       "buttonColor": "#b91c1c",
       "buttonType": "SIMPLE",
       "id": "groupButtonikfqhfpscf",
-      "index": 9,
+      "index": 12,
       "isDisabled": false,
       "isSeparator": false,
       "isVisible": true,
@@ -216,7 +257,7 @@
       "buttonColor": "#b91c1c",
       "buttonType": "SIMPLE",
       "id": "groupButtonn5a4d7t5by",
-      "index": 8,
+      "index": 11,
       "isDisabled": false,
       "isSeparator": false,
       "isVisible": true,
@@ -232,7 +273,7 @@
       "buttonColor": "#b91c1c",
       "buttonType": "SIMPLE",
       "id": "groupButtonpm182v16u5",
-      "index": 7,
+      "index": 8,
       "isDisabled": false,
       "isSeparator": false,
       "isVisible": true,
@@ -259,6 +300,22 @@
       "placement": "CENTER",
       "variant": "filled",
       "widgetId": "hw2r0niwu6"
+    },
+    "groupButtonvec6yrhb3g": {
+      "buttonColor": "#b91c1c",
+      "buttonType": "SIMPLE",
+      "id": "groupButtonvec6yrhb3g",
+      "index": 10,
+      "isDisabled": false,
+      "isSeparator": false,
+      "isVisible": true,
+      "itemType": "BUTTON",
+      "label": "Ψιλικά",
+      "menuItems": {},
+      "onClick": "{{navigateTo('CategoryView', {\n  \"category\": \"Ψιλικά\"\n}, 'SAME_WINDOW');}}",
+      "placement": "CENTER",
+      "variant": "filled",
+      "widgetId": "04wrfrdi1q"
     }
   },
   "isCanvas": false,

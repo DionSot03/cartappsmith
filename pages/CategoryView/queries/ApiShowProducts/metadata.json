@@ -30,7 +30,7 @@
       "queryParameters": [
         {
           "key": "category",
-          "value": "{{ appsmith.URL.queryParams.category }}\n"
+          "value": "{{ appsmith.URL.queryParams.category }} "
         }
       ],
       "timeoutInMillisecond": 10000
@@ -44,10 +44,10 @@
     },
     "dynamicBindingPathList": [
       {
-        "key": "queryParameters[0].value"
+        "key": "path"
       },
       {
-        "key": "path"
+        "key": "queryParameters[0].value"
       }
     ],
     "name": "ApiShowProducts",
